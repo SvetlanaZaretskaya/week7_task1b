@@ -1,0 +1,133 @@
+body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 70px 210px 108px;
+    grid-template-rows: 70px 210px 108px; 
+}
+body > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; 
+}
+body > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; 
+}
+body > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; 
+}
+body > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; 
+}
+body > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; 
+}
+body > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2; 
+}
+
+
+header {
+    background-color: #E0E0E0;
+    text-align: center;
+    padding:10px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+}
+
+main {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+article {
+    background-color: #FFF8E3;
+    padding:10px;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:  1fr;
+    grid-template-columns:  1fr;
+    -ms-grid-rows: 3fr;
+    grid-template-rows: 3fr;
+}
+
+article > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.article__bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+
+.article__bottom__more1 {
+    padding:10px;
+    background-color: #FEEAB9;
+}
+
+.article__bottom__more2 {
+    padding:10px;
+    background-color: #FEEAB9;
+}
+
+.article__bottom__more3 {
+    padding:10px;
+    background-color: #FEEAB9;
+}
+
+aside {
+    background-color: #DDECCB;
+    padding:10px;
+    text-align: center;
+    
+}
+
+footer {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    background-color: #E0E0E0;
+    padding:10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+}
+
+.footer__section {
+    background-color: #FAFAFA;
+    padding:10px;
+    text-align: center;
+}
+
+@media  (max-width:650px)  {
+    body {
+        font-size: 12px;
+    } 
+}
+
+@media (max-width:372px) {
+    body {
+        font-size: 10px;
+    } 
+}
